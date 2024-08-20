@@ -26,11 +26,124 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "sno",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClientID"
+								}
+							},
+							{
+								"source": {
+									"name": "productname",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClientName"
+								}
+							},
+							{
+								"source": {
+									"name": "year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Address1"
+								}
+							},
+							{
+								"source": {
+									"name": "sales",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Town"
+								}
+							},
+							{
+								"sink": {
+									"name": "County"
+								}
+							},
+							{
+								"sink": {
+									"name": "PostCode"
+								}
+							},
+							{
+								"sink": {
+									"name": "Region"
+								}
+							},
+							{
+								"sink": {
+									"name": "OuterPostode"
+								}
+							},
+							{
+								"sink": {
+									"name": "CountryID"
+								}
+							},
+							{
+								"sink": {
+									"name": "ClientType"
+								}
+							},
+							{
+								"sink": {
+									"name": "ClientSize"
+								}
+							},
+							{
+								"sink": {
+									"name": "ClientSince"
+								}
+							},
+							{
+								"sink": {
+									"name": "IsCreditWorthy"
+								}
+							},
+							{
+								"sink": {
+									"name": "IsDealer"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,0 +1,73 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ClientID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClientName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Town",
+				"type": "nvarchar"
+			},
+			{
+				"name": "County",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PostCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Region",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OuterPostode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CountryID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClientType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClientSize",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClientSince",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsCreditWorthy",
+				"type": "nvarchar"
+			},
+			{
+				"name": "IsDealer",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "test_git"
+		}
+	}
+}
