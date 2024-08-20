@@ -39,9 +39,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "sno",
-									"type": "String",
-									"physicalType": "String"
+									"name": ""
 								},
 								"sink": {
 									"name": "ClientID"
@@ -49,9 +47,7 @@
 							},
 							{
 								"source": {
-									"name": "productname",
-									"type": "String",
-									"physicalType": "String"
+									"name": ""
 								},
 								"sink": {
 									"name": "ClientName"
@@ -59,9 +55,7 @@
 							},
 							{
 								"source": {
-									"name": "year",
-									"type": "String",
-									"physicalType": "String"
+									"name": ""
 								},
 								"sink": {
 									"name": "Address1"
@@ -69,60 +63,88 @@
 							},
 							{
 								"source": {
-									"name": "sales",
-									"type": "String",
-									"physicalType": "String"
+									"name": ""
 								},
 								"sink": {
 									"name": "Town"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "County"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "PostCode"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "Region"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "OuterPostode"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "CountryID"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "ClientType"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "ClientSize"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "ClientSince"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "IsCreditWorthy"
 								}
 							},
 							{
+								"source": {
+									"name": ""
+								},
 								"sink": {
 									"name": "IsDealer"
 								}
